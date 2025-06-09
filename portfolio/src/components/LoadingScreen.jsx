@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
     const [text, setText] = useState("");
-    const fullText = "Welcome!";
+    const fullText = "Nice to see u :)";
 
     useEffect(() => {
         let index = 0;
@@ -23,13 +23,13 @@ export const LoadingScreen = ({ onComplete }) => {
     }, [onComplete]);
  
     return (
-        <div className="fixed inset-0 z-50 bg-pink-50 text-pink-400 flex flex-col items-center justify-center">
+        <div className="fixed inset-0 z-50 bg-stone-50 text-pink-300 flex flex-col items-center justify-center">
 
             <div className="mb-4 text-4xl font-mono font-bold">
                 {text} <span className="animate-blink ml-1">|</span>
             </div>
 
-            <div className="w-[200px] h-[2px] bg-indigo-300 rounded relative overflow-hidden">
+            <div className="w-[200px] h-[2px] bg-pink-200 rounded relative overflow-hidden">
                 <div className="w-[40%] h-full bg-gray-50 shadow-[0_0_15px_#3b82f6] animate-loading-bar">
                     {" "}
                 </div>
